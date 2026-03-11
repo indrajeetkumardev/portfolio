@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Indrajeet Kumar — Backend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Syne:wght@300;400;600&family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ░░ CANVAS FOR PARTICLES ░░ -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ░░ ANIMATED GRADIENT BG ░░ -->
+  <div class="bg-gradient"></div>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#home">
+        <span class="logo-bracket">&lt;</span>AC<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ░░ HERO ░░ -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Work
+      </div>
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Indrajeet Kumar</h1>
+      <div class="hero-title">
+        <span class="title-prefix">// </span>
+        <span id="typed-text"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="hero-sub">Building robust, scalable backend systems that power modern applications.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <span>View Projects</span>
+          <i class="fa fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <span>Contact Me</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">15+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">8+</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hex-grid">
+        <div class="hex-ring ring-1"></div>
+        <div class="hex-ring ring-2"></div>
+        <div class="hex-ring ring-3"></div>
+        <div class="hex-center">
+          <i class="fa-solid fa-server"></i>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ░░ ABOUT ░░ -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-label">// 01. about_me</div>
+      <h2 class="section-title">About <span class="neon">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-card glass">
+          <div class="about-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-core">
+              <i class="fa-solid fa-code"></i>
+            </div>
+          </div>
+          <div class="about-terminal">
+            <div class="terminal-bar">
+              <span class="t-dot red"></span>
+              <span class="t-dot yellow"></span>
+              <span class="t-dot green"></span>
+              <span class="t-title">profile.json</span>
+            </div>
+            <pre class="terminal-body"><code><span class="j-bracket">{</span>
+  <span class="j-key">"name"</span>: <span class="j-str">"Indrajeet Kumar"</span>,
+  <span class="j-key">"role"</span>: <span class="j-str">"Backend Developer"</span>,
+  <span class="j-key">"location"</span>: <span class="j-str">"Ghazipur UttarPrdesh India"</span>,
+  <span class="j-key">"status"</span>: <span class="j-str">"Open to work"</span>,
+  <span class="j-key">"passion"</span>: <span class="j-str">"Clean, scalable APIs"</span>
+<span class="j-bracket">}</span></code></pre>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>I'm a passionate <strong>Backend Developer</strong> specializing in building reliable, high-performance server-side systems. My focus is creating clean, maintainable code that scales with real-world demands.</p>
+          <p>Currently deepening my expertise in the <strong>.NET ecosystem</strong>, I work with technologies like <strong>C#</strong>, <strong>ASP.NET Core</strong>, and <strong>SQL Server</strong> to build RESTful APIs and microservices. I'm also expanding into <strong>Azure</strong> cloud deployment and <strong>Docker</strong> containerization to deliver production-ready solutions.</p>
+          <p>I believe great software is built at the intersection of solid architecture, performance, and developer experience.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">ASP.NET Core</span>
+            <span class="tech-tag">SQL Server</span>
+            <span class="tech-tag">Azure</span>
+            <span class="tech-tag">Docker</span>
+          </div>
+          <a href="#contact" class="btn btn-primary mt-btn">
+            <span>Let's Connect</span>
+            <i class="fa fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SKILLS ░░ -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-label">// 02. tech_stack</div>
+      <h2 class="section-title">My <span class="neon">Skills</span></h2>
+      <p class="section-sub">Technologies I work with to build powerful backend systems</p>
+      <div class="skills-grid">
+
+        <div class="skill-card glass" data-skill="C#">
+          <div class="skill-icon">
+            <i class="fa-solid fa-c"></i>
+            <span class="skill-hash">#</span>
+          </div>
+          <h3>C#</h3>
+          <p>Object-oriented programming, LINQ, async/await patterns, and clean architecture principles.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="92%"></div></div>
+          <span class="skill-pct">92%</span>
+        </div>
+
+        <div class="skill-card glass" data-skill="ASP.NET">
+          <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h3>ASP.NET Core</h3>
+          <p>Web APIs, middleware, dependency injection, Entity Framework Core and MVC architecture.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div>
+          <span class="skill-pct">88%</span>
+        </div>
+
+        <div class="skill-card glass" data-skill="SQL">
+          <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>SQL Server</h3>
+          <p>Database design, complex queries, stored procedures, indexing strategies and optimization.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+          <span class="skill-pct">85%</span>
+        </div>
+
+        <div class="skill-card glass" data-skill="Azure">
+          <div class="skill-icon"><i class="fa-solid fa-cloud"></i></div>
+          <h3>Azure</h3>
+          <p>App Service, Azure SQL, Blob Storage, Key Vault, and CI/CD pipeline configuration.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+          <span class="skill-pct">75%</span>
+        </div>
+
+        <div class="skill-card glass" data-skill="Docker">
+          <div class="skill-icon"><i class="fa-brands fa-docker"></i></div>
+          <h3>Docker</h3>
+          <p>Containerization, Docker Compose, multi-stage builds and container orchestration basics.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="78%"></div></div>
+          <span class="skill-pct">78%</span>
+        </div>
+
+        <div class="skill-card glass" data-skill="Git">
+          <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+          <h3>Git</h3>
+          <p>Version control, branching strategies, pull requests, code reviews and collaborative workflows.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+          <span class="skill-pct">90%</span>
+        </div>
+
+        <div class="skill-card glass" data-skill="REST">
+          <div class="skill-icon"><i class="fa-solid fa-plug"></i></div>
+          <h3>REST APIs</h3>
+          <p>RESTful design, OpenAPI/Swagger documentation, authentication, rate limiting and versioning.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="93%"></div></div>
+          <span class="skill-pct">93%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PROJECTS ░░ -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-label">// 03. projects</div>
+      <h2 class="section-title">Featured <span class="neon">Projects</span></h2>
+      <p class="section-sub">A selection of backend systems I've designed and built</p>
+      <div class="projects-grid">
+
+        <div class="project-card glass tilt-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-users-gear"></i></div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" class="icon-btn" title="View on GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#" class="icon-btn" title="Live Demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-num">01</div>
+          <h3 class="project-title">Employee Management API</h3>
+          <p class="project-desc">A full-featured RESTful API for managing employees, departments, roles and payroll. Includes JWT authentication, role-based access control, and comprehensive Swagger documentation.</p>
+          <div class="project-tags">
+            <span>C#</span><span>ASP.NET Core</span><span>SQL Server</span><span>JWT</span>
+          </div>
+          <a href="https://github.com" target="_blank" class="btn btn-outline project-btn">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub Repo</span>
+          </a>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="project-card glass tilt-card featured">
+          <div class="featured-badge">Featured</div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" class="icon-btn" title="View on GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#" class="icon-btn" title="Live Demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-num">02</div>
+          <h3 class="project-title">E-Commerce Backend</h3>
+          <p class="project-desc">Scalable e-commerce API with product catalog, cart system, order processing, and payment integration. Built with microservice principles and deployed on Azure with Docker containers.</p>
+          <div class="project-tags">
+            <span>ASP.NET Core</span><span>Docker</span><span>Azure</span><span>Redis</span>
+          </div>
+          <a href="https://github.com" target="_blank" class="btn btn-outline project-btn">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub Repo</span>
+          </a>
+          <div class="card-glow"></div>
+        </div>
+
+        <div class="project-card glass tilt-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" class="icon-btn" title="View on GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#" class="icon-btn" title="Live Demo">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-num">03</div>
+          <h3 class="project-title">Developer Portfolio</h3>
+          <p class="project-desc">This very portfolio — a futuristic, fully responsive personal site with particle animations, glassmorphism UI, smooth scroll effects, and a contact form backed by a lightweight API.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span>
+          </div>
+          <a href="https://github.com" target="_blank" class="btn btn-outline project-btn">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub Repo</span>
+          </a>
+          <div class="card-glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT ░░ -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-label">// 04. contact</div>
+      <h2 class="section-title">Get In <span class="neon">Touch</span></h2>
+      <p class="section-sub">Have a project in mind? Let's build something great together.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">I'm always open to discussing new opportunities, interesting projects or just a good chat about tech. Drop me a message!</p>
+          <div class="contact-links">
+            <a href="mailto:indrajeetkumardev07@gmail.com" class="contact-item glass">
+              <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">Email</span>
+                <span class="ci-value">indrajeetkumardev07@gmail.com</span>
+              </div>
+              <i class="fa-solid fa-arrow-right ci-arrow"></i>
+            </a>
+            <a href="https://github.com/indrajeetkumardev" target="_blank" class="contact-item glass">
+              <div class="ci-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">GitHub</span>
+                <span class="ci-value">github.com/indrajeetkumardev</span>
+              </div>
+              <i class="fa-solid fa-arrow-right ci-arrow"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/indrajeet-kumar" target="_blank" class="contact-item glass">
+              <div class="ci-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">LinkedIn</span>
+                <span class="ci-value">linkedin.com/in/indrajeet-kumar</span>
+              </div>
+              <i class="fa-solid fa-arrow-right ci-arrow"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap glass">
+          <div class="form-header">
+            <div class="terminal-bar">
+              <span class="t-dot red"></span>
+              <span class="t-dot yellow"></span>
+              <span class="t-dot green"></span>
+              <span class="t-title">send_message.sh</span>
+            </div>
+          </div>
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your name" autocomplete="off" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="your@email.com" autocomplete="off" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width" id="submit-btn">
+              <span id="btn-text">Send Message</span>
+              <i class="fa fa-paper-plane" id="btn-icon"></i>
+            </button>
+            <div id="form-success" class="form-success hidden">
+              <i class="fa fa-check-circle"></i> Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a class="nav-logo" href="#home">
+        <span class="logo-bracket">&lt;</span>AC<span class="logo-bracket">/&gt;</span>
+      </a>
+      <p class="footer-text">Designed & Built by <span class="neon">Indrajeet Kumar</span> · 2026</p>
+      <div class="footer-socials">
+        <a href="https://github.com/indrajeetkumardev" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/indrajeet-kumar" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:indrajeetkumardev07@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
